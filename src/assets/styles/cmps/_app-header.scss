@@ -15,8 +15,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        
     }
     // LOGO
     .logo {
@@ -71,7 +69,7 @@
             height: inherit;
             width: inherit;
             transform: translateX(0);
-            >* {
+            > * {
                 margin-right: 30px;
             }
             li {
@@ -84,9 +82,10 @@
             }
         }
     }
-    .nav-links>* {
+    .nav-links > * {
         color: whitesmoke;
         font-size: 0.9rem;
+        width: 80%;
         @include for-narrow-layout {
             font-size: 1.2rem;
         }
@@ -94,7 +93,7 @@
     a.active {
         color: #e63579;
     }
-   
+
     // Hamburger-btn
     .hamburger-btn {
         background-color: transparent;
@@ -107,7 +106,7 @@
         &:hover {
             // background-color: #33373cfa;
         }
-        
+
         @include for-normal-layout {
             display: none;
         }
@@ -115,7 +114,6 @@
             font-size: 25px;
             line-height: 25px;
         }
-        
     }
     // Screen-overlay
     .screen-overlay {
@@ -136,38 +134,56 @@
     }
 
     // Cart-btn
-    .cart-btn { 
+    .cart-btn {
         all: unset;
         position: relative;
         cursor: pointer;
-        border: 1px solid whitesmoke;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        border-radius: 50%;
-        &:hover { 
-            background-color: #33373cfa;
-        }
+        border: none;
+        width: 80%;
+        text-align: center;
+        padding: 6px 0px;
+        border-bottom: 1px solid #e5e5e52e;
+        transition: background-color 0.3s;
+        font-weight: 400;
 
-        .cart-icon {
-            font-size: 25px;
-            line-height: 25px;
-        }
-
-        .items-counter-container { 
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            transform: translate(25%, 25%);
-            color: whitesmoke;
-            background-color: #e63579;
-            width: 1.5rem;
-            height: 1.5rem;
+        @include for-normal-layout {
+            border: 1px solid whitesmoke;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 10px;
+        }
+
+        &:hover {
+            background-color: #33373cfa;
+        }
+
+        .cart-icon {
+            @include for-normal-layout {
+                font-size: 25px;
+                line-height: 25px;
+            }
+        }
+
+        .items-counter-container {
+            display: none;
+
+            @include for-normal-layout {
+                display: block;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                transform: translate(25%, 25%);
+                color: whitesmoke;
+                background-color: #e63579;
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
     }
 }

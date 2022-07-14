@@ -1,3 +1,20 @@
 button {
     cursor: pointer;
 }
+
+.primary-btn { 
+    background-color: #e63579;
+    border: none;
+    color: #fff;
+    margin-right: 4px;
+    padding: 10px 16px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: rem(14px);
+    font-weight: 500;
+    transition: color 200ms ease;
+    &:hover {
+        background-color: #e53d7d;
+        box-shadow: none;
+    }
+}
