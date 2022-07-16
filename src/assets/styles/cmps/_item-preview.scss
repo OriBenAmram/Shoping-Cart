@@ -1,49 +1,86 @@
-.item-preview { 
-    background-color: #212427;
+.item-preview {
     color: whitesmoke;
+    display: flex;
+    flex-direction: column;
 
-    .item-image { 
-        background-color: green;
+    .item-image {
+        // background-color: green;
         height: 200px;
         position: relative;
+        flex: 1;
 
-        .primary-btn { 
+        img {
+            height: 100%;
+        }
+
+        .img-fade {
+            background-color: #00000026;
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .primary-btn {
             position: absolute;
             bottom: 0;
             left: 50%;
             transform: translate(-50%, -50%);
         }
+
+        .cart-options { 
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: 600;
+            width: 120px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .remove-btn { 
+            background-color: inherit;
+            border: none;
+            position: absolute;
+            padding: 0;
+            top: 5px;
+            right: 10px;
+            font-size: rem(12px);
+            color: rgb(174, 30, 30);
+        }
     }
 
-    .item-info { 
+    .item-info {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: end;
         padding: 0 10px 5px;
         height: 35px;
-        
+        background-color: #212427;
+
         @include for-normal-layout {
             padding: 0 10px 5px;
             height: 45px;
         }
-        .item-name { 
+        .item-name {
             font-size: rem(14px);
-            
+
             @include for-normal-layout {
                 font-size: rem(18px);
             }
         }
 
-        .item-price { 
+        .item-price {
             font-size: rem(14px);
             color: #b3b7bb;
-            
+
             @include for-normal-layout {
                 font-size: rem(16px);
             }
-
         }
-
     }
 }

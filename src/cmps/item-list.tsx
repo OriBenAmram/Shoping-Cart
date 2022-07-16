@@ -1,8 +1,18 @@
-import { ItemPreview } from './item-preview.jsx'
+import { ItemPreview } from './item-preview'
 
-export function ItemList() { 
-    const arr = [1, 2, 3, 4]
+type ItemListProps = {
+    items: {
+        id: string;
+        name: string;
+        price: number;
+        imgUrl: string
+    }[]
+}
+
+export function ItemList({ items }: ItemListProps) {
+    console.log('items:', items);
+    
     return <div className="item-list">
-        {arr.map(item => <ItemPreview key={item} />)}
+        {items.map(item => <ItemPreview item={item} key={item.id} />)}
     </div>
 }
