@@ -3,10 +3,11 @@ import { NavLink } from 'react-router-dom';
 // Icons
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
+import { useShoppingCart } from '../context/shopping-cart-context';
 
 export function AppHeader() {
     const [isMenuOpen, setMenuState] = useState(false)
-
+    const { openCart, closeCart, cartQuantity } = useShoppingCart()
     const toggleMenu = () => {
         setMenuState(!isMenuOpen)
     }
@@ -30,10 +31,10 @@ export function AppHeader() {
                         <NavLink className={(navData) => navData.isActive ? 'active' : ''} to={'/store'}> <li>Store</li></NavLink>
                         <NavLink className={(navData) => navData.isActive ? 'active' : ''} to={'/about'}> <li>About</li></NavLink>
                         <button title='cart' className="cart-btn" onClick={() => {
-                            onClickCart()
+                            openCart()
                         }}>
                             <AiOutlineShoppingCart className="cart-icon" />
-                            <div className="items-counter-container">3</div>
+                            <div className="items-counter-container">{cartQuantity}</div>
                         </button>
                     </ul>
                 </nav>

@@ -19,13 +19,11 @@ export function ItemPreview({ item }: ItemPreviewProps) {
     const { getItemQuantity, increaseCartQuantity, decreaseCartQuantity, removeFromCart } = useShoppingCart()
     const quantity = getItemQuantity(item.id)
 
-
-
     return (
         <div className="item-preview">
 
             <div className="item-image">
-                <img src={couch1} alt="" />
+                <img src={couch1} alt="couch-image" />
                 <span className="img-fade"></span>
                 {!quantity && <button className="primary-btn" onClick={() => {
                     increaseCartQuantity(item.id)
