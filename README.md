@@ -1,46 +1,56 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Kujero - shopping cart app with React & TypeScript.
+I decided to create a shpping cart app with TS and some hooks I wanted to try. 
+Keep reading to see those cool tools and my ***next project targets!***
 
-## Available Scripts
+![Homepage image](src/assets/imgs/blue.jpg "Homepage image")
+___
 
-In the project directory, you can run:
+### Table of Contents
+- [Description](#description)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Learn more](#learn-more)
 
-### `npm start`
+## Description
+Kujero is an App for buying couches in different colours. 
+The users can add items to their cart, remove and add more that are the same types.
+Each item has a price, and on the Side Bar (which is opened by clicking on the cart button) they can watch what they have in cart:
+the different items and the total price of all of it. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This is not my best App. It might even be the less impressive one. 
+***But!*** I chosed to do it because I'm planning on creating much bigger app using TS with React.
+In addition I included two new hooks that I've never used before, which you can read more about in the Technologies section.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## Technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React.js (v18) & react-router (v6)
+- Type Script
+- Sass (mixins, variables, functions)
 
-### `npm run build`
+As I've done for the last few months, I created this App with hooks as well.
+This time, I decided to use useContext and useLocalStorage, which I've never done before.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
+Clone the project or dowload the files on top.
+```
+git clone https://github.com/OriBenAmram/Shoping-Cart.git
+```
+Open the terminal and enter the following line to run it locally on your computer:
+```
+npm i 
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Open http://localhost:3000 to view it in the browser.
 
-### `npm run eject`
+## Learn more
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+As I wrote, it's the first time that I used Type Script with React. 
+I did it with this tutorial, after I've learned 7 hours course and practice on Udamy.
+You are more than welcomed to contact me for any quastions about it.
+I guess that everyone can write TS, but not every one can use the best conventions, and that is my goal. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+I'm currently working on my next project with [Rona Fainshtein](https://github.com/RonaFain/RonaFain "Rona's profile link"), who is also an instructor at Coding Academy with me. We are writting it with TS as well, and this time - it would be a huge and impressive App!
