@@ -6,7 +6,7 @@ export const utilService = {
     getFormatCurrence
 }
 
-function makeId(length = 6) {
+function makeId(length : number = 6 ) {
     var txt = '';
     var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
@@ -17,13 +17,13 @@ function makeId(length = 6) {
     return txt;
 }
 
-function getRandomIntInclusive(min, max) {
+function getRandomIntInclusive(min : number, max : number) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
 }
 
-function getFormatCurrence(number) { 
+function getFormatCurrence(number : number) { 
     const currencyFormatter = new Intl.NumberFormat(undefined, { currency : "USD", style: "currency"})
     return currencyFormatter.format(number)
 }
