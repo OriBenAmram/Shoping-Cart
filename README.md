@@ -31,6 +31,8 @@ In addition I included two new hooks that I've never used before, which you can 
 
 As I've done for the last few months, I created this App with hooks as well.
 This time, I decided to use useContext and useLocalStorage, which I've never done before.
+Of course there is many things to see in the Sass files, as well. 
+This page is responsive because I've used a certain layout (with flex) and different mixins which are depend on the user screen width. 
 
 
 ## Installation
