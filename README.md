@@ -1,6 +1,7 @@
 
-# Kujero - Shopping cart app with React & TS
-An app in which you can add couches (just random item I like...) to your cart, and editing it from the side bar as well (using useContext hook).
+# Kujero - shopping cart app with React & TypeScript.
+I decided to create a shpping cart app with TS and some hooks I wanted to try. 
+Keep reading to see those cool tools and my ***next project targets!***
 
 ![Homepage image](src/assets/imgs/blue.jpg "Homepage image")
 ___
