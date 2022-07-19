@@ -23,9 +23,9 @@ export function Store() {
 
     return <div className="store-page main-layout">
         <div className="store-header">
-            <h2>Store header</h2>
-            <p>Here you can find many Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsa architecto laboriosam minima facilis eligendi!</p>
-            <p>And! feel free to Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            <h1>Our couches in Kejuro!</h1>
+            <p>Here you can find many Lorem ipsg elit. Quis ipsa architecto laboriosam minima facilis eligendi!</p>
+            <p>Buy your favourite couch!</p>
         </div>
         <div className="store-content">
             <ItemList items={items}/>

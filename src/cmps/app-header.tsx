@@ -24,7 +24,7 @@ export function AppHeader() {
             }}></div>
 
             <div className="header-content main-layout">
-                <NavLink className='logo' to={'/'}>Logo</NavLink>
+                <NavLink className='logo' to={'/'}>Kujero</NavLink>
                 <nav className="nav-container">
                     <ul className={`nav-links clean-list ${(isMenuOpen) ? 'open' : ''}`}>
                         <NavLink className={(navData) => navData.isActive ? 'active' : ''} to={'/'}> <li>Home</li></NavLink>

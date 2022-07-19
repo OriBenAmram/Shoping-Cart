@@ -22,6 +22,32 @@
             top: 0;
         }
 
+        .img-fade-bottom {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+
+            .top-cover-fade {
+                background: linear-gradient(180deg, #0000, #00000080);
+                height: 32px;
+                left: 0;
+                mix-blend-mode: normal;
+                padding: 8px 8px 0;
+                right: 0;
+                width: 100%;
+            }
+
+            .bottom-cover-fade {
+                background: linear-gradient(180deg,#00000080,#000);
+                height: 32px;
+                left: 0;
+                mix-blend-mode: normal;
+                padding: 8px 8px 0;
+                right: 0;
+                width: 100%;
+            }
+        }
+
         .primary-btn {
             position: absolute;
             bottom: 0;
@@ -29,27 +55,34 @@
             transform: translate(-50%, -50%);
         }
 
-        .cart-options { 
+        .cart-options {
             position: absolute;
-            bottom: 0;
+            bottom: 20px;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-weight: 600;
+            font-weight: 550;
             width: 120px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+
+            button {
+                border: none;
+                border-radius: 5px;
+                width: 20px;
+            }
         }
 
-        .remove-btn { 
+        .remove-btn {
             background-color: inherit;
             border: none;
             position: absolute;
             padding: 0;
-            top: 5px;
-            right: 10px;
-            font-size: rem(12px);
-            color: rgb(174, 30, 30);
+            bottom: 5px;
+            font-size: rem(14px);
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #e63579;
         }
     }
 

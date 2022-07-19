@@ -1,12 +1,12 @@
 .side-bar { 
-    background-color: #f4f5f7;
+    background-color: #212427;
+    color: white;
     position: fixed;
     top: 85px;
     right: 0;
     transform: translateX(100%);
     width: 340px;
     height: calc(100vh - 80px);
-    border: 1px solid lightgray;
     border-radius: 3px;
     border-top-right-radius: 0px;
     box-shadow: 0 12px 24px -6px #091e4240, 0 0 0 1px #091e4214;
@@ -17,5 +17,32 @@
 
     &.open {
         transform: translateX(0%);
+    }
+
+    .side-bar-header { 
+        // background-color: green;
+        padding: 20px 0 20px 16px;
+
+        h2 { 
+            margin: 0;
+        }
+
+        .close-btn { 
+            position: absolute;
+            top: 5px;
+            right: 0;
+            background-color: inherit;
+            border: none;
+            color: white;
+            font-size: 16px;
+        }
+    }
+
+    .side-bar-content { 
+        padding: 0 16px;
+    }
+
+    .side-bar-footer { 
+        padding: 16px;
     }
 }

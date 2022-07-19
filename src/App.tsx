@@ -19,7 +19,7 @@ function App() {
           <Route path='/store' element={<Store />} />
           <Route path='/about' element={<About />} />
         </Routes>
-        <SideBar />
+        {/* <SideBar /> */}
       </div>
     </ShoppingCartProvider>
   );

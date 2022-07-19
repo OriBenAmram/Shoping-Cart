@@ -1,6 +1,5 @@
 
 import { useState } from 'react';
-import couch1 from '../assets/imgs/couch1.jpg'
 import { useShoppingCart } from '../context/shopping-cart-context';
 
 // Services
@@ -23,15 +22,19 @@ export function ItemPreview({ item }: ItemPreviewProps) {
         <div className="item-preview">
 
             <div className="item-image">
-                <img src={couch1} alt="couch-image" />
+                <img src={item.imgUrl} alt="couch-image" />
                 <span className="img-fade"></span>
+                <div className="img-fade-bottom">
+                    <div className="top-cover-fade"></div>
+                    <div className="bottom-cover-fade"></div>
+                </div>
                 {!quantity && <button className="primary-btn" onClick={() => {
                     increaseCartQuantity(item.id)
                 }}>Add to cart</button>}
-                {quantity && <button className="remove-btn" onClick={() => {
+                {!!quantity && <button className="remove-btn" onClick={() => {
                     removeFromCart(item.id)
                 }}>Remove from cart</button>}
-                {quantity && <div className="cart-options">
+                {!!quantity && <div className="cart-options">
                     <button onClick={() => {
                         decreaseCartQuantity(item.id)
                     }}>-</button>

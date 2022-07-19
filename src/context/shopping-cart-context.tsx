@@ -1,4 +1,5 @@
 import { useState, useContext, createContext, ReactNode } from "react";
+import { SideBar } from "../cmps/sidebar";
 
 type ShoppingCartProviderProps = {
     children: ReactNode
@@ -30,11 +31,11 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
     const [cartItems, setCartItems] = useState<CartItem[]>([])
     const [isOpen, setIsOpen] = useState(false)
 
-    const openCart = () => { 
+    const openCart = () => {
         setIsOpen(true)
     }
 
-    const closeCart = () => { 
+    const closeCart = () => {
         setIsOpen(false)
     }
 
@@ -87,5 +88,6 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
         cartQuantity
     }}>
         {children}
+        <SideBar isOpen={isOpen} />
     </ShoppingCartContext.Provider>
 }
