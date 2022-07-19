@@ -3,7 +3,7 @@
 I decided to create a shpping cart app with TS and some hooks I wanted to try. 
 Keep reading to see those cool tools and my ***next project targets!***
 
-![Homepage image](src/assets/imgs/blue.jpg "Homepage image")
+![Homepage image](src/assets/imgs/store-desktop.jpg "Homepage image")
 ___
 
 ### Table of Contents
